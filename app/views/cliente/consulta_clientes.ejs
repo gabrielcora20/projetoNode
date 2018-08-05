@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clientes</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>Id</td>
+			<td>Nome</td>
+			<td>Cpf</td>
+			<td>Data de nascimento</td>
+			<td>Cep</td>
+			<td>E-mail</td>
+		</tr>
+		<% for(var i = 0; i < clientes.length ; i++){ %>
+			<tr>
+				<td><%= clientes[i].ID_CLIENTE %></td>
+				<td><%= clientes[i].NOME_CLIENTE %></td>
+				<td><%= clientes[i].CPF_CLIENTE %></td>
+				<td><%= clientes[i].DATA_NASC_CLIENTE %></td>
+				<td><%= clientes[i].CEP_CLIENTE %></td>
+				<td><%= clientes[i].EMAIL_CLIENTE %></td>
+			</tr>
+		<% } %>
+	</table>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "projetonode",
+  "version": "1.0.0",
+  "description": "Sistema comercial",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielcora20/commercial_system.git"
+  },
+  "author": "Gabriel Corá",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielcora20/commercial_system/issues"
+  },
+  "homepage": "https://github.com/gabrielcora20/commercial_system#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "consign": "^0.1.6",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "mysql": "^2.16.0"
+  }
+}
