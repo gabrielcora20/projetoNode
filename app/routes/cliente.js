@@ -5,13 +5,13 @@ module.exports = function(application){
 	});
 
 	application.post('/cliente/cadastro/salvar_cliente', function(req,res){
-		application.app.models.clienteModel.insertCliente(req.body,application.config.db_connection(),function(error,result){
+		application.app.models.clienteModel.insertCliente(req.body,application.config.dbConnection(),function(error,result){
 			res.redirect('/cliente/consulta/consulta_clientes');
 		});
 	});
 
 	application.get('/cliente/consulta/consulta_clientes', function(req,res){
-		application.app.models.clienteModel.getClientes( application.config.db_connection(), function(error,result){
+		application.app.models.clienteModel.getClientes( application.config.dbConnection(), function(error,result){
 			res.render('cliente/consulta_clientes',{clientes:result});
 		});
 	});	

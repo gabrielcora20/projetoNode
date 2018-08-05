@@ -4,13 +4,13 @@ module.exports = function(application){
 	});
 
 	application.post('/produto/cadastro/salvar_produto', function(req,res){
-		application.app.models.produtoModel.insertProduto(req.body,application.config.db_connection(),function(error,result){
+		application.app.models.produtoModel.insertProduto(req.body,application.config.dbConnection(),function(error,result){
 			res.redirect('/produto/consulta/consulta_produtos');
 		});		
 	});
 
 	application.get('/produto/consulta/consulta_produtos', function(req,res){
-		application.app.models.produtoModel.getProdutos(application.config.db_connection(),function(error,result){
+		application.app.models.produtoModel.getProdutos(application.config.dbConnection(),function(error,result){
 			res.render('produto/consulta_produtos',{produtos:result});
 		})
 	});

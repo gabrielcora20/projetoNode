@@ -14,6 +14,6 @@ application.use(bodyParser.urlencoded({extended:true}));
 consign()
 .include('./app/routes')
 .include('./app/models')
-.then('./config/db_connection.js')
+.then('./config/dbConnection.js')
 .into(application);
 module.exports = application;
