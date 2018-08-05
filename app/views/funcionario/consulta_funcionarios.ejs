@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Funcionários</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>Id</td>
+			<td>Nome</td>
+			<td>Cpf</td>
+			<td>Data de nascimento</td>
+			<td>Cep</td>
+			<td>E-mail</td>
+		</tr>
+		<% for(var i = 0; i < funcionarios.length ; i++){ %>
+			<tr>
+				<td><%= funcionarios[i].ID_FUNCIONARIO %></td>
+				<td><%= funcionarios[i].NOME_FUNCIONARIO %></td>
+				<td><%= funcionarios[i].CPF_FUNCIONARIO %></td>
+				<td><%= funcionarios[i].DATA_NASC_FUNCIONARIO %></td>
+				<td><%= funcionarios[i].CEP_FUNCIONARIO %></td>
+				<td><%= funcionarios[i].EMAIL_FUNCIONARIO %></td>
+			</tr>
+		<% } %>
+	</table>
+</body>
+</html>
